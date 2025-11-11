@@ -41,7 +41,7 @@ export const TrafficLightWithEffect = () => {
       clearInterval(intervalId);
     }
 
-  }, [countdown]);
+  }, [countdown, light]);
 
   return (
     <div
