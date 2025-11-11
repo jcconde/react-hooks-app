@@ -15,7 +15,9 @@ export const TrafficLightWithEffect = () => {
   const [countdown, setCountDown] = useState(5);
 
   useEffect(() => {
-    console.log({countdown});
+    if (countdown == 0) {
+      return;
+    }
 
     const intervalId = setInterval(() => {
       console.log('Countdown:', countdown);
