@@ -16,6 +16,18 @@ export const TrafficLightWithEffect = () => {
 
   useEffect(() => {
     if (countdown == 0) {
+      setCountDown(5);
+      if (light == 'red') {
+        setLight('green');
+        return;
+      } else if (light == 'yellow') {
+        setLight('red');
+        return;
+      } else {
+        setLight('yellow');
+        return;
+      }
+
       return;
     }
 
